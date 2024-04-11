@@ -1,9 +1,6 @@
 import * as THREE from 'three';
-import { DirectionalLight } from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { FirstPersonControls } from 'three/addons/controls/FirstPersonControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
 import * as CANNON from 'cannon-es'
 import CannonDebugger from 'cannon-es-debugger';
 import gsap from "gsap";
@@ -15,7 +12,6 @@ import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
 let player, city, dragonModel, dragonBody, mixer
 
 const gltfLoader = new GLTFLoader();
-const Fbxloader = new FBXLoader();
 
 
 const scene = new THREE.Scene();
