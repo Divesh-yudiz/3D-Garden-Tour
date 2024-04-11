@@ -9,6 +9,7 @@ import CannonDebugger from 'cannon-es-debugger';
 import gsap from "gsap";
 import Stats from 'three/examples/jsm/libs/stats.module';
 import sky from "./Assets/Background/sky.hdr";
+import garden from "./Assets/Book/scene.gltf";
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
 
 let player, city, dragonModel, dragonBody, mixer
@@ -71,7 +72,7 @@ function updatePointLightPosition() {
 
 //Helper
 let axisHelper = new THREE.AxesHelper();
-scene.add(axisHelper);
+// scene.add(axisHelper);
 
 //Adding Physics
 let world = new CANNON.World();
@@ -128,7 +129,7 @@ const init = () => {
 
 
   function addPlaygroundModel() {
-    gltfLoader.load('Assets/Book/scene.gltf', (gltf) => {
+    gltfLoader.load(garden, (gltf) => {
       const model = gltf.scene;
       const cannonModel = new CANNON.Body({
         mass: 0,
