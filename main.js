@@ -9,7 +9,7 @@ import CannonDebugger from 'cannon-es-debugger';
 import gsap from "gsap";
 import Stats from 'three/examples/jsm/libs/stats.module';
 import sky from "./Assets/Background/sky.hdr";
-import garden from "./Assets/Book/scene.gltf";
+import garden from "./Assets/Book/scene.glb";
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
 
 let player, city, dragonModel, dragonBody, mixer
